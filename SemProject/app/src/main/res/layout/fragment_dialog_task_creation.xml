@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/bgimg">
+
+    <!-- Task Name Input -->
+    <EditText
+        android:id="@+id/taskNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Name"
+        android:padding="12dp"
+        android:minHeight="48dp"/>
+
+    <!-- Task Description Input -->
+    <EditText
+        android:id="@+id/taskDescriptionInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Description"
+        android:padding="12dp"
+        android:minHeight="48dp"/>
+
+    <!-- Task Due Date Input (uses DatePickerDialog in the Fragment) -->
+    <EditText
+        android:id="@+id/taskDueDateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Due Date (YYYY-MM-DD)"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        android:focusable="false"
+        android:clickable="true"/>
+
+    <!-- Task Time Input (uses TimePickerDialog in the Fragment) -->
+    <EditText
+        android:id="@+id/taskTimeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Time (HH:MM)"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        android:focusable="false"
+        android:clickable="true"/>
+
+    <!-- Priority Spinner -->
+    <Spinner
+        android:id="@+id/taskPrioritySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Save and Cancel Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"/>
+    </LinearLayout>
+</LinearLayout>
