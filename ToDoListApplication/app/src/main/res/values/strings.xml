@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ToDoListApplication</string>
+    <string-array name="dropdown_items">
+        <item>Default</item>
+        <item>Work</item>
+        <item>Personal</item>
+        <item>Shopping</item>
+    </string-array>
+</resources>

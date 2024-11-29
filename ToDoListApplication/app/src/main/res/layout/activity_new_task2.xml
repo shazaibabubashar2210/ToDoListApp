@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue_background">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/bluebackground"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:contentDescription="Back"
+            android:layout_marginStart="8dp" />
+
+        <TextView
+            android:id="@+id/headerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Task"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Task Input Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is to be done?"
+        android:textColor="@color/blue_link"
+        android:padding="8dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp">
+
+        <EditText
+            android:id="@+id/taskInput"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="Enter Task Here"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@color/blue_background"
+            android:paddingLeft="8dp"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/microphoneIcon"
+            android:layout_width="48dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/microphone" />
+    </LinearLayout>
+
+    <!-- Due Date Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Due date"
+        android:textSize="14sp"
+        android:textColor="@color/blue_link"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp">
+
+        <TextView
+            android:id="@+id/dueDate"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="Select Date"
+            android:text="Date not set"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:background="@color/blue_background"
+            android:paddingLeft="8dp"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/calendarIcon"
+            android:layout_width="48dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_calander" />
+    </LinearLayout>
+
+    <!-- Dropdown Spinner Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to list"
+        android:textColor="@color/blue_link"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/addToListSpinner"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:background="@android:color/transparent"
+            android:popupTheme="@style/CustomSpinnerStyle"
+            android:spinnerMode="dropdown" />
+
+        <!-- Drop Icon on the Left -->
+        <ImageView
+            android:id="@+id/dropdown"
+            android:layout_width="48dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_dropdown"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="start" />
+
+        <!-- Add to List Icon on the Right -->
+        <ImageView
+            android:id="@+id/addToListIcon"
+            android:layout_width="48dp"
+            android:layout_height="35dp"
+            android:src="@drawable/addtolist"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="end" />
+    </LinearLayout>
+
+    <!-- Save Button Section -->
+    <ImageButton
+        android:id="@+id/saveTaskButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/baseline_check_24"
+        android:background="@drawable/circle_background"
+        android:contentDescription="Submit"
+        android:padding="16dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
