@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#002244">
+
+    <!-- Parent LinearLayout wrapping all the content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header with Settings title and back arrow icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/bluebackground"
+            android:padding="16dp">
+
+            <!-- Back Arrow Icon -->
+            <ImageView
+                android:id="@+id/back_arrow"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:contentDescription="Back Arrow"
+                android:layout_marginEnd="16dp" />
+
+            <!-- Settings Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <!-- General Text Above Status Bar -->
+        <TextView
+            android:id="@+id/general_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="General"
+            android:textColor="#87CEEB"
+            android:textSize="18sp"
+            android:padding="8dp"/>
+
+        <!-- Settings List -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- First Setting Item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:gravity="center_vertical">
+
+                <!-- Setting Title and Status Text -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingStart="8dp">
+
+                    <!-- Setting Title Text -->
+                    <TextView
+                        android:id="@+id/setting_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status Bar"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <!-- Setting Status Text (Enabled/Disabled) -->
+                    <TextView
+                        android:id="@+id/setting_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enabled"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- Setting Checkbox (aligned to the right) -->
+                <CheckBox
+                    android:id="@+id/setting_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end" />
+            </LinearLayout>
+
+            <!-- Second Setting Item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:gravity="center_vertical">
+
+                <!-- Setting Title and Status Text -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingStart="8dp">
+
+                    <!-- Setting Title Text -->
+                    <TextView
+                        android:id="@+id/setting_title_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Confirm finished Tasks"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <!-- Setting Status Text (Enabled/Disabled) -->
+                    <TextView
+                        android:id="@+id/setting_status_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enabled"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- Setting Checkbox (aligned to the right) -->
+                <CheckBox
+                    android:id="@+id/setting_checkbox_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end" />
+            </LinearLayout>
+
+            <!-- Third Setting Item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:gravity="center_vertical">
+
+                <!-- Setting Title and Status Text -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingStart="8dp">
+
+                    <!-- Setting Title Text -->
+                    <TextView
+                        android:id="@+id/setting_title_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Confirm repeating Tasks"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <!-- Setting Status Text (Enabled/Disabled) -->
+                    <TextView
+                        android:id="@+id/setting_status_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enabled"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- Setting Checkbox (aligned to the right) -->
+                <CheckBox
+                    android:id="@+id/setting_checkbox_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end" />
+            </LinearLayout>
+
+            <!-- Fourth Setting Item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:gravity="center_vertical">
+
+                <!-- Setting Title and Status Text -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingStart="8dp">
+
+                    <!-- Setting Title Text -->
+                    <TextView
+                        android:id="@+id/setting_title_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Found in ClipBoard"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <!-- Setting Status Text (Enabled/Disabled) -->
+                    <TextView
+                        android:id="@+id/setting_status_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enabled"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- Setting Checkbox (aligned to the right) -->
+                <CheckBox
+                    android:id="@+id/setting_checkbox_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:gravity="center_vertical">
+
+                <!-- Setting Title and Status Text -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingStart="8dp">
+
+                    <!-- Setting Title Text -->
+                    <TextView
+                        android:id="@+id/setting_title_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="List to show at startup"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <!-- Setting Status Text (Enabled/Disabled) -->
+                    <TextView
+                        android:id="@+id/setting_status_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="All Lists"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Setting Title and Status Text -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="8dp">
+
+                <!-- Setting Title Text -->
+                <TextView
+                    android:id="@+id/setting_title_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="First Day of Week"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <!-- Setting Status Text (Enabled/Disabled) -->
+                <TextView
+                    android:id="@+id/setting_status_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saturday"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Setting Title and Status Text -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="8dp">
+
+                <!-- Setting Title Text -->
+                <TextView
+                    android:id="@+id/setting_title_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time Format"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <!-- Setting Status Text (Enabled/Disabled) -->
+                <TextView
+                    android:id="@+id/setting_status_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 hours"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Setting Title and Status Text -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="8dp">
+
+                <!-- Setting Title Text -->
+                <TextView
+                    android:id="@+id/setting_title_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sort Order"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <!-- Setting Status Text (Enabled/Disabled) -->
+                <TextView
+                    android:id="@+id/setting_status_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Due Data + Alphabetically"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/notification_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="Notification"
+            android:textColor="#87CEEB"
+            android:textSize="18sp"
+            android:padding="8dp"/>
+<!--        Now remaining parts Starts from Here-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Setting Title and Status Text -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="8dp">
+
+                <!-- Setting Title Text -->
+                <TextView
+                    android:id="@+id/setting_title_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sound"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <!-- Setting Status Text (Enabled/Disabled) -->
+                <TextView
+                    android:id="@+id/setting_status_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Defualt (O no)"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Setting Title and Status Text -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="8dp">
+
+                <!-- Setting Title Text -->
+                <TextView
+                    android:id="@+id/Voice_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Voice"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <!-- Setting Status Text (Enabled/Disabled) -->
+                <TextView
+                    android:id="@+id/Voice_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Uses system defualt speech synthesizer"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(TTS)"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- Setting Checkbox (aligned to the right) -->
+            <CheckBox
+                android:id="@+id/voice_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Setting Title and Status Text -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="8dp">
+
+                <!-- Setting Title Text -->
+                <TextView
+                    android:id="@+id/vibration_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vibration"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <!-- Setting Status Text (Enabled/Disabled) -->
+                <TextView
+                    android:id="@+id/vibration_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enabled"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- Setting Checkbox (aligned to the right) -->
+            <CheckBox
+                android:id="@+id/vibration_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Setting Title and Status Text -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="8dp">
+
+                <!-- Setting Title Text -->
+                <TextView
+                    android:id="@+id/Task_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Task Notification"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <!-- Setting Status Text (Enabled/Disabled) -->
+                <TextView
+                    android:id="@+id/Task_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On time"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Setting Title and Status Text -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="8dp">
+
+                <!-- Setting Title Text -->
+                <TextView
+                    android:id="@+id/Day_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Day Summary"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <!-- Setting Status Text (Enabled/Disabled) -->
+                <TextView
+                    android:id="@+id/Day_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enabled"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- Setting Checkbox (aligned to the right) -->
+            <CheckBox
+                android:id="@+id/Day_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Setting Title and Status Text -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="8dp">
+
+                <!-- Setting Title Text -->
+                <TextView
+                    android:id="@+id/Time_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status Bar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <!-- Setting Status Text (Enabled/Disabled) -->
+                <TextView
+                    android:id="@+id/Time_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8:00 am"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/Sync_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="Syncing with Google "
+            android:textColor="#87CEEB"
+            android:textSize="18sp"
+            android:padding="8dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Setting Title and Status Text -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="8dp">
+
+                <!-- Setting Title Text -->
+                <TextView
+                    android:id="@+id/Sync_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Google Account"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <!-- Setting Status Text (Enabled/Disabled) -->
+                <TextView
+                    android:id="@+id/Sync_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not set"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Setting Title and Status Text -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="8dp">
+
+                <!-- Setting Title Text -->
+                <TextView
+                    android:id="@+id/SyncMode_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sync Mode"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <!-- Setting Status Text (Enabled/Disabled) -->
+                <TextView
+                    android:id="@+id/SyncMode_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sync disabled"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/About_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="About"
+            android:textColor="#87CEEB"
+            android:textSize="18sp"
+            android:padding="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Setting Title and Status Text -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="8dp">
+
+                <!-- Setting Title Text -->
+                <TextView
+                    android:id="@+id/Invite_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Invite friends to the app"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Setting Title and Status Text -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="8dp">
+
+                <!-- Setting Title Text -->
+                <TextView
+                    android:id="@+id/MoreApp_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="More Apps"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Setting Title and Status Text -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="8dp">
+
+                <!-- Setting Title Text -->
+                <TextView
+                    android:id="@+id/feedback_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send feedback"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Setting Title and Status Text -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="8dp">
+
+                <!-- Setting Title Text -->
+                <TextView
+                    android:id="@+id/Version_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SplendO"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <!-- Setting Status Text (Enabled/Disabled) -->
+                <TextView
+                    android:id="@+id/Version_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Version 4.38"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/FollowUs_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="Follow  us"
+            android:textColor="#87CEEB"
+            android:textSize="18sp"
+            android:padding="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Setting Title and Status Text -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="8dp">
+
+                <!-- Setting Title Text -->
+                <TextView
+                    android:id="@+id/Followus_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Setting Title and Status Text -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="8dp">
+
+                <!-- Setting Title Text -->
+                <TextView
+                    android:id="@+id/Insta_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Instagram"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Setting Title and Status Text -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="8dp">
+
+                <!-- Setting Title Text -->
+                <TextView
+                    android:id="@+id/Twitter_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Twitter"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

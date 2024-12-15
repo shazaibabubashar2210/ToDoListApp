@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MenuTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <!-- Spinner item style -->
+    <style name="CustomSpinnerStyle" parent="Theme.AppCompat.Light">
+        <item name="android:popupBackground">@android:color/white</item> <!-- White background for dropdown -->
+    </style>
+
+    <style name="MenuItemStyle" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:background">@color/blue</item> <!-- Background color -->
+        <item name="android:textColor">@android:color/white</item> <!-- Text color -->
+    </style>
+</resources>

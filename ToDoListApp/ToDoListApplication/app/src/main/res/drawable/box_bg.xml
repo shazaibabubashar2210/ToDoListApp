@@ -1,0 +1,6 @@
+<!-- res/drawable/box_bg_rounded.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/transparent" /> <!-- Transparent background -->
+    <corners android:radius="16dp" /> <!-- Corner radius for rounded corners -->
+    <stroke android:color="@color/white" android:width="2dp" /> <!-- Border color and width -->
+</shape>
