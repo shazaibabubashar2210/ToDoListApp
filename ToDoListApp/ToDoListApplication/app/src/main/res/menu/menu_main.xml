@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/task_lists"
+        android:title="Task Lists"
+        android:itemTextAppearance="@style/MenuItemStyle" />
+    <item
+        android:id="@+id/add_in_batch_mode"
+        android:title="Add in Batch Mode"
+        android:itemTextAppearance="@style/MenuItemStyle" />
+    <item
+        android:id="@+id/remove_ads"
+        android:title="Remove Ads"
+        android:itemTextAppearance="@style/MenuItemStyle" />
+    <item
+        android:id="@+id/Sendfeedback"
+        android:title="Send Feedback"
+        android:itemTextAppearance="@style/MenuItemStyle" />
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:itemTextAppearance="@style/MenuItemStyle" />
+</menu>
